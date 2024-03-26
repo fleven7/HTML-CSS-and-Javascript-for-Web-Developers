@@ -1,1 +1,119 @@
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 175%;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
+/* Simple Responsive Framework. */
+.container {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    text-align: center;
+}
+
+#row {
+    background-color: gray;
+    box-sizing: border-box;
+    border: 3px solid black;
+    padding: 2px;
+    margin: 10px;
+    position: relative;
+}
+
+nav {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 125%;
+    text-align: center;
+    box-sizing: border-box;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    float: right;
+    width: 33%;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.Chicken {
+    background-color: RGB(218, 137, 151);
+    color: black;
+}
+
+.Beef {
+    background-color: RGB(120, 19, 19);
+    color: white;
+}
+
+.Sushi {
+    background-color: RGB(225, 209, 128);
+    color: black;
+}
+
+#first {
+    padding: 20px 10px 10px 10px;
+}
+p {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 100%;
+    padding: 30px 10px 0px 10px;
+    text-align: left;
+    margin: 5px;
+    clear: both;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+
+    #row
+    {
+        float: left;
+        width: 31%;
+    }
+    .col-lg-4 {
+        width: 31%;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 992px) {
+    #row
+    {
+        float: left;
+    }
+
+    .col-md-6 {
+        width: 47%;
+    }
+
+    .col-md-12 {
+        width: 96%;
+    }
+
+    .Chicken {
+        width: 45%;
+    }
+
+    .Beef {
+        width: 45%;
+    }
+
+    .Sushi {
+        width: 20%;
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 0px) and (max-width: 767px) {
+
+    #row {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .col-sm-12 {
+        width: 70%;
+    }
+}
